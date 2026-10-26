@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website institucional da Igreja Evangélica Forças Espirituais da Luz em Maputo. Cultos, estudos bíblicos, eventos e comunidade.">
+    <meta name="author" content="BibleConnect Maputo">
+    <title>Portal IEFEL | Igreja Evangélica Forças Espirituais da Luz</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="topo">
+        <div class="contentor barra">
+            <a class="marca" href="/" aria-label="Página inicial BibleConnect Maputo">
+                <img src="/imagens/logo.png" alt="Logotipo da Igreja Evangélica Forças Espirituais da Luz" class="simbolo" width="43" height="43">
+                <span>
+                    <strong>Portal IEFEL</strong>
+                    <small>MAPUTO</small>
+                </span>
+            </a>
+			
+            <button class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false">Menu</button>
+            <nav class="menu" aria-label="Navegação principal">
+                <a class="activo" href="/">Início</a>
+                <a href="/sobre">Sobre</a>
+                <a href="/ministerios">Ministérios</a>
+                <a href="/estudos">Estudos</a>
+                <a href="/eventos">Eventos</a>
+                <a href="/galeria">Galeria</a>
+                <a href="/contactos">Contactos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="titulo-principal">
+            <div class="contentor hero-conteudo">
+                <span class="etiqueta">Uma igreja firmada na Palavra de Deus</span>
+                <h1 id="titulo-principal">Igreja Evangélica Forças Espirituais da Luz</h1>
+                <p>Crescendo em <strong>fé</strong>, <em>amor</em> e comunhão para transformar vidas e servir a nossa comunidade.</p>
+                <div class="botoes">
+                    <a class="botao" href="/sobre" title="Conhecer mais sobre a igreja">Conhecer a igreja</a>
+                    <a class="botao secundario" href="/eventos" title="Ver eventos e actividades">Ver eventos</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="versiculo" aria-label="Versículo do dia">
+            <div class="contentor versiculo-caixa">
+                <span class="aspas" aria-hidden="true">&ldquo;</span>
+                <div>
+                    <blockquote data-versiculo>Lâmpada para os meus pés é a tua palavra, e luz para o meu caminho.</blockquote>
+                    <cite data-referencia>Salmos 119:105</cite>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccao clara" aria-labelledby="titulo-audio">
+            <div class="contentor">
+                <div class="cabecalho-seccao">
+                    <span class="etiqueta">Conteúdo multimédia</span>
+                    <h2 id="titulo-audio">Mensagem em Áudio</h2>
+                    <p>Ouça a mensagem da semana e deixe-se edificar pela Palavra de Deus.</p>
+                </div>
+                <div class="audio-container">
+                    <audio controls muted preload="metadata">
+                        <source src="/multimedia/mensagem.mp3" type="audio/mpeg">
+                        <source src="/multimedia/mensagem.ogg" type="audio/ogg">
+                        <p>O seu navegador não suporta áudio. Faça o download da mensagem <a href="/multimedia/mensagem.mp3">aqui</a>.</p>
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccao clara" aria-labelledby="titulo-video">
+            <div class="contentor">
+                <div class="cabecalho-seccao">
+                    <span class="etiqueta">Conteúdo audiovisual</span>
+                    <h2 id="titulo-video">Mensagem em Vídeo</h2>
+                    <p>Assista à mensagem completa e compartilhe com a sua família.</p>
+                </div>
+                <div class="video-container">
+                    <video controls muted width="100%" poster="/imagens/capa-video.png" preload="metadata">
+                        <source src="/multimedia/mensagem.mp4" type="video/mp4">
+                        <source src="/multimedia/mensagem.webm" type="video/webm">
+                        <p>O seu navegador não suporta vídeo. Faça o download da mensagem <a href="/multimedia/mensagem.mp4">aqui</a>.</p>
+                    </video>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="seccao" aria-labelledby="titulo-documento">
+            <div class="contentor">
+                <div class="cabecalho-seccao">
+                    <span class="etiqueta">Documento multimédia</span>
+                    <h2 id="titulo-documento">Regulamento Informativo e Estudo em PDF</h2>
+                    <p>Consulte o documento directamente abaixo ou descarregue para ler onde quiser.</p>
+                </div>
+
+                <div class="pdf-container" style="margin-top: 1.5rem;">
+                    <div class="botoes" style="margin-top: 1rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a class="botao" href="/multimedia/Regulamento-Interno-para-obreiros.pdf" target="_blank" rel="noopener noreferrer" title="Abrir PDF numa nova aba">
+                            Visualizar em ecrã inteiro
+                        </a>
+                        <a class="botao secundario" href="/multimedia/Regulamento-Interno-para-obreiros.pdf" download="Regulamento-Interno-para-obreiros.pdf" title="Descarregar ficheiro PDF">
+                            Baixar PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccao clara" aria-labelledby="titulo-horarios">
+            <div class="contentor">
+                <div class="cabecalho-seccao">
+                    <span class="etiqueta">Programação Semanal</span>
+                    <h2 id="titulo-horarios">Horário dos Cultos e Actividades</h2>
+                    <p>Consulte os horários e participe connosco.</p>
+                </div>
+                <div class="tabela-container">
+                    <table class="tabela-horarios">
+                        <caption>Programação Semanal da Igreja</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Dia</th>
+                                <th scope="col">Actividade</th>
+                                <th scope="col">Horário</th>
+                                <th scope="col">Local</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Domingo</td>
+                                <td>Culto da Palavra e Cura</td>
+                                <td>10:00 &ndash; 12:00</td>
+                                <td>Salão Principal</td>
+                            </tr>
+                            <tr>
+                                <td>Domingo</td>
+                                <td>Escola Dominical</td>
+                                <td>09:00 &ndash; 09:40</td>
+                                <td>Sala de Ensino</td>
+                            </tr>
+                            <tr>
+                                <td>Segunda-feira e Quarta-feira</td>
+                                <td>Culto de Ensino</td>
+                                <td>18:00 &ndash; 19:30</td>
+                                <td>Salão Principal</td>
+                            </tr>
+                            <tr>
+                                <td>Terça-feira</td>
+                                <td>Encontro de Mulheres</td>
+                                <td>14:00 &ndash; 15:30</td>
+                                <td>Parque Cronista</td>
+                            </tr>
+                            <tr>
+                                <td>Quarta-feira</td>
+                                <td>Oração</td>
+                                <td>22:00 &ndash; 22:30</td>
+                                <td>Online pelo WhatsApp</td>
+                            </tr>
+                            <tr>
+                                <td>Sexta-feira</td>
+                                <td>Culto da Palavra e Libertação</td>
+                                <td>18:00 &ndash; 19:30</td>
+                                <td>Salão principal</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4"><strong>Total de 6 actividades semanais</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="seccao" aria-labelledby="titulo-destaques">
+            <div class="contentor destaques">
+                <article class="destaque">
+                    <h3>Estudos Bíblicos</h3>
+                    <p>Estudos e reflexões para fortalecer a caminhada com Deus.</p>
+                    <a class="ligacao" href="/estudos" title="Aceder aos estudos bíblicos">Aceder &rarr;</a>
+                </article>
+                <article class="destaque">
+                    <h3>Sermões e Mensagens</h3>
+                    <p>Mensagens para edificar e transformar vidas.</p>
+                    <a class="ligacao" href="/estudos" title="Explorar sermões e mensagens">Explorar &rarr;</a>
+                </article>
+                <article class="destaque">
+                    <h3>Pedido de Oração</h3>
+                    <p>Partilhe o seu pedido de forma simples e reservada.</p>
+                    <a class="ligacao" href="/contactos" title="Fazer um pedido de oração">Fazer pedido &rarr;</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="seccao clara" aria-labelledby="titulo-comunidade">
+            <div class="contentor duas-colunas">
+                <div>
+                    <span class="etiqueta">Comunidade e fé</span>
+                    <h2 id="titulo-comunidade">Há um lugar para si</h2>
+                    <p>Conheça os ministérios de jovens, crianças, mulheres, homens e louvor. Caminhamos juntos, servindo com amor e partilhando a Palavra.</p>
+                    <a class="botao" href="/ministerios" title="Conhecer os ministérios">Conhecer ministérios</a>
+                </div>
+                <img src="/imagens/comunidade-igreja.png" alt="Membros da comunidade reunidos na igreja" loading="lazy" width="560" height="373">
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="contentor">
+            <div class="rodape-grelha">
+                <div>
+                    <h3>Portal IEFEL</h3>
+                    <p>Unindo pessoas por meio da Palavra de Deus e da comunhão.</p>
+                    <address>
+                        Av. Vladimir Lenine, Bairro Polana Caniço A &ndash; Maputo<br>
+                        <strong>Horário:</strong> Seg. a Sáb., 08h&ndash;20h.
+                    </address>
+                </div>
+                <div>
+                    <h3>Navegação</h3>
+                    <a href="/sobre">Sobre Nós</a>
+                    <a href="/ministerios">Ministérios</a>
+                    <a href="/eventos">Agenda</a>
+                    <a href="/contactos">Contactos</a>
+                </div>
+                <div>
+                    <h3>Contactos</h3>
+                    <p>Maputo, Moçambique<br>
+                    <a href="tel:+258841234567">+258 84 123 4567</a><br>
+                    <a href="mailto:gomesvirgilio449@gmail.com">gomesvirgilio449@gmail.com</a></p>
+                    <p><small>&copy; 2026 Portal IEFEL.</small></p>
+                </div>
+            </div>
+            <div class="copyright">&copy; 2026 Portal IEFEL. Projecto académico de Fundamentos de HTML5.</div>
+        </div>
+    </footer>
+
+    <script src="/js/script.js" defer></script>
+</body>
+</html>

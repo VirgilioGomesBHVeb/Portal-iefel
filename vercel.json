@@ -1,0 +1,43 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    },
+    {
+      "source": "/(css|js|imagens|multimedia)/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "src": "^/$",
+      "dest": "/html/index.html"
+    },
+    {
+      "src": "^/(css|js|imagens|multimedia)/(.*)",
+      "dest": "/$1/$2"
+    },
+    {
+      "src": "^/((?!css|js|imagens|multimedia|.*\\..*).*)$",
+      "dest": "/html/$1.html"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/.*",
+      "status": 404,
+      "dest": "/html/404.html"
+    }
+  ]
+}
