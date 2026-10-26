@@ -1,43 +1,38 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "headers": [
+  "rewrites": [
     {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "X-XSS-Protection", "value": "1; mode=block" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
-      ]
+      "source": "/",
+      "destination": "/html/index.html"
     },
     {
-      "source": "/(css|js|imagens|multimedia)/(.*)",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
-      ]
-    }
-  ],
-  "routes": [
-    {
-      "src": "^/$",
-      "dest": "/html/index.html"
+      "source": "/sobre",
+      "destination": "/html/sobre.html"
     },
     {
-      "src": "^/(css|js|imagens|multimedia)/(.*)",
-      "dest": "/$1/$2"
+      "source": "/ministerios",
+      "destination": "/html/ministerios.html"
     },
     {
-      "src": "^/((?!css|js|imagens|multimedia|.*\\..*).*)$",
-      "dest": "/html/$1.html"
+      "source": "/estudos",
+      "destination": "/html/estudos.html"
     },
     {
-      "handle": "filesystem"
+      "source": "/eventos",
+      "destination": "/html/eventos.html"
     },
     {
-      "src": "/.*",
-      "status": 404,
-      "dest": "/html/404.html"
+      "source": "/galeria",
+      "destination": "/html/galeria.html"
+    },
+    {
+      "source": "/contactos",
+      "destination": "/html/contactos.html"
+    },
+    {
+      "source": "/((?!css|js|imagens|multimedia).* )",
+      "destination": "/html/404.html"
     }
   ]
 }
