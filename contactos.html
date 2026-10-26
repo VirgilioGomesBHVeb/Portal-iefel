@@ -68,7 +68,7 @@
 
                     <div>
                         <h2>Envie-nos uma Mensagem</h2>
-                        <form action="#" method="post" class="formulario" data-demonstracao>
+                        <form id="formContacto" action="https://formspree.io/f/xbgggknw" method="post" class="formulario" data-demonstracao>
                             <fieldset>
                                 <legend>Dados pessoais</legend>
                                 <div class="campo">
@@ -108,8 +108,11 @@
                                 </div>
                             </fieldset>
 
-                            <button type="submit" class="botao">Enviar mensagem</button>
-                            <button type="reset" class="botao secundario">Limpar campos</button>
+                            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1rem;">
+                                <button type="submit" class="botao">Enviar por e-mail</button>
+                                <button type="button" id="btnWhatsapp" class="botao" style="background-color: #25D366; border-color: #25D366; color: #fff;">Enviar via WhatsApp</button>
+                                <button type="reset" class="botao secundario">Limpar campos</button>
+                            </div>
 
                             <div class="aviso" role="status" aria-live="polite">Mensagem enviada com sucesso! Entraremos em contacto brevemente.</div>
                         </form>
@@ -131,7 +134,10 @@
                     <a href="/">Início</a>
                     <a href="/sobre">Sobre Nós</a>
                     <a href="/ministerios">Ministérios</a>
+                    <a href="/estudos">Estudos</a>
                     <a href="/eventos">Agenda</a>
+                    <a href="/galeria">Galeria</a>
+                    <a href="/contactos">Contactos</a>
                 </div>
                 <div>
                     <h3>Contactos</h3>
