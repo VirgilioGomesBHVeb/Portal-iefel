@@ -1,38 +1,9 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false,
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/html/index.html"
-    },
-    {
-      "source": "/sobre",
-      "destination": "/html/sobre.html"
-    },
-    {
-      "source": "/ministerios",
-      "destination": "/html/ministerios.html"
-    },
-    {
-      "source": "/estudos",
-      "destination": "/html/estudos.html"
-    },
-    {
-      "source": "/eventos",
-      "destination": "/html/eventos.html"
-    },
-    {
-      "source": "/galeria",
-      "destination": "/html/galeria.html"
-    },
-    {
-      "source": "/contactos",
-      "destination": "/html/contactos.html"
-    },
-    {
-      "source": "/((?!css|js|imagens|multimedia).* )",
-      "destination": "/html/404.html"
+      "source": "/((?!css|js|imagens|multimedia|.*\\..*).*)",
+      "destination": "/html/$1.html"
     }
   ]
 }
